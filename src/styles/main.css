@@ -1,0 +1,35 @@
+.container {
+  padding: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.card-img {
+  height: 200px;
+  width: auto;
+}
+
+.item {
+  margin-top: 10px;
+}
+
+.detail {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+}
+
+.collaps {
+  cursor: pointer;
+}

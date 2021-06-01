@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The CockTail</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-warning">
+      <span class="navbar-brand mb-0 h1 pull-left">The CockTail</span>
+      <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#AboutModal">
+        About Submission
+      </button>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="collaps" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Category
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div id="category" class="list-group"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="card">
+          <h5 class="card-header">My Profil</h5>
+          <div class="card-body">
+            <image-figure src="./images/dicoding.png" alt="My Profil Picture" caption="Asnan Asrawi">
+            </image-figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">
+            <div class="col-md-6 float-left">
+              <h4>Result List</h4>
+            </div>
+            <div class="col-md-6 float-right">
+              <form class="form-inline">
+                <input id="inputSearch" class="form-control col-md-8" placeholder="Search" aria-label="Search" />&nbsp;
+                <a id="search" class="btn btn-outline-success col-md-3">
+                  Search
+                </a>
+              </form>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="row" id="listCocktail"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="detail" class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="AboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                About Submission
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <span>
+                Tugas dibuat menggunakan API dari
+                <b>TheCockTailDB </b>
+                https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list
+                https://www.thecocktaildb.com/api/json/v1/1/filter.php?c
+                https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=
+                https://www.thecocktaildb.com/api/json/v1/1/search.php?s=
+              </span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
